@@ -1,0 +1,78 @@
+:root {
+  --free: rgb(149, 216, 149);
+  --busy: rgb(236, 116, 116);
+  --to-be-busy: rgb(180, 172, 98);
+  --accent: rgb(205, 204, 204);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-family: Tilt-Neon;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+  font-family: "Tilt-Neon";
+  font-display: "swap";
+  src: url("../fonts/TiltNeon-Regular.ttf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Tilt-Neon";
+}
+
+body {
+  background-attachment: fixed;
+  background: url("../public/appBg.jpg");
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+}

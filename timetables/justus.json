@@ -1,0 +1,158 @@
+[
+	[
+		{
+			"title": "Differential Equations",
+			"venue": "TT415",
+			"start": "2022-09-19 08:00:00",
+			"end": "2022-09-19 08:50:00"
+		},
+		{
+			"title": "QSP",
+			"venue": "TT416",
+			"start": "2022-09-19 09:00:00",
+			"end": "2022-09-19 09:50:00"
+		},
+		{
+			"title": "Electronic Materials and Devices",
+			"venue": "PRP124",
+			"start": "2022-09-19 10:00:00",
+			"end": "2022-09-19 10:50:00"
+		},
+		{
+			"title": "Chemistry",
+			"venue": "PRP123",
+			"start": "2022-09-19 11:00:00",
+			"end": "2022-09-19 11:50:00"
+		},
+		{
+			"title": "Java",
+			"venue": "PRP120",
+			"start": "2022-09-19 12:00:00",
+			"end": "2022-09-19 12:50:00"
+		},
+		{
+			"title": "English Lab",
+			"venue": "TT306",
+			"start": "2022-09-19 15:51:00",
+			"end": "2022-09-19 17:30:00"
+		}
+	],
+	[
+		{
+			"title": "Chemistry",
+			"venue": "PRP123",
+			"start": "2022-09-19 08:00:00",
+			"end": "2022-09-19 08:50:00"
+		},
+		{
+			"title": "English",
+			"venue": "TT414",
+			"start": "2022-09-19 09:00:00",
+			"end": "2022-09-19 09:50:00"
+		},
+		{
+			"title": "Circuit Theory",
+			"venue": "PRP116",
+			"start": "2022-09-19 11:00:00",
+			"end": "2022-09-19 11:50:00"
+		},
+		{
+			"title": "Differential Equations",
+			"venue": "TT415",
+			"start": "2022-09-19 12:00:00",
+			"end": "2022-09-19 12:50:00"
+		}
+	],
+	[
+		{
+			"title": "Circuit Theory",
+			"venue": "PRP116",
+			"start": "2022-09-19 08:00:00",
+			"end": "2022-09-19 08:50:00"
+		},
+		{
+			"title": "Differential Equations",
+			"venue": "TT415",
+			"start": "2022-09-19 09:00:00",
+			"end": "2022-09-19 09:50:00"
+		},
+		{
+			"title": "QSP",
+			"venue": "TT416",
+			"start": "2022-09-19 10:00:00",
+			"end": "2022-09-19 10:50:00"
+		},
+		{
+			"title": "Java Lab",
+			"venue": "TT238",
+			"start": "2022-09-19 15:51:00",
+			"end": "2022-09-19 17:30:00"
+		}
+	],
+	[
+		{
+			"title": "Electronic Materials and Devices",
+			"venue": "PRP124",
+			"start": "2022-09-19 08:00:00",
+			"end": "2022-09-19 08:50:00"
+		},
+		{
+			"title": "Chemistry",
+			"venue": "PRP123",
+			"start": "2022-09-19 09:00:00",
+			"end": "2022-09-19 09:50:00"
+		},
+		{
+			"title": "English",
+			"venue": "TT414",
+			"start": "2022-09-19 10:00:00",
+			"end": "2022-09-19 10:50:00"
+		},
+		{
+			"title": "Circuit Theory",
+			"venue": "PRP116",
+			"start": "2022-09-19 12:00:00",
+			"end": "2022-09-19 12:50:00"
+		},
+		{
+			"title": "Chemistry Lab",
+			"venue": "PRPG07",
+			"start": "2022-09-19 14:00:00",
+			"end": "2022-09-19 15:40:00"
+		}
+	],
+	[
+		{
+			"title": "Circuit Theory",
+			"venue": "PRP116",
+			"start": "2022-09-19 09:00:00",
+			"end": "2022-09-19 09:50:00"
+		},
+		{
+			"title": "Differential Equations",
+			"venue": "TT415",
+			"start": "2022-09-19 10:00:00",
+			"end": "2022-09-19 10:50:00"
+		},
+		{
+			"title": "QSP",
+			"venue": "TT416",
+			"start": "2022-09-19 11:00:00",
+			"end": "2022-09-19 11:50:00"
+		},
+		{
+			"title": "Electronic Materials and Devices",
+			"venue": "PRP124",
+			"start": "2022-09-19 12:00:00",
+			"end": "2022-09-19 12:50:00"
+		},
+		{
+			"title": "Java Lab",
+			"venue": "TT238",
+			"start": "2022-09-19 14:00:00",
+			"end": "2022-09-19 15:40:00"
+		}
+	],
+	[],
+	[]
+]

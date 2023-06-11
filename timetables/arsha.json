@@ -1,0 +1,146 @@
+[
+	[
+		{
+			"title": "Differential Equations",
+			"venue": "SJTG01",
+			"start": "2022-09-19 14:00:00",
+			"end": "2022-09-19 14:50:00"
+		},
+		{
+			"title": "English",
+			"venue": "PRP122",
+			"start": "2022-09-19 15:00:00",
+			"end": "2022-09-19 15:50:00"
+		},
+		{
+			"title": "BEEE",
+			"venue": "SJTG01",
+			"start": "2022-09-19 17:00:00",
+			"end": "2022-09-19 17:50:00"
+		},
+		{
+			"title": "QSP",
+			"venue": "SJTG01",
+			"start": "2022-09-19 18:00:00",
+			"end": "2022-09-19 18:50:00"
+		}
+	],
+	[
+		{
+			"title": "OOPS Lab",
+			"venue": "SJT218",
+			"start": "2022-09-19 09:51:00",
+			"end": "2022-09-19 11:30:00"
+		},
+		{
+			"title": "BEEE",
+			"venue": "SJTG01",
+			"start": "2022-09-19 14:00:00",
+			"end": "2022-09-19 14:50:00"
+		},
+		{
+			"title": "QSP",
+			"venue": "SJTG01",
+			"start": "2022-09-19 15:00:00",
+			"end": "2022-09-19 15:50:00"
+		},
+		{
+			"title": "OOPS",
+			"venue": "SJTG03",
+			"start": "2022-09-19 16:00:00",
+			"end": "2022-09-19 16:50:00"
+		},
+		{
+			"title": "DL & Microprocessors",
+			"venue": "SJTG04",
+			"start": "2022-09-19 17:00:00",
+			"end": "2022-09-19 17:50:00"
+		},
+		{
+			"title": "Differential Equations",
+			"venue": "SJTG01",
+			"start": "2022-09-19 18:00:00",
+			"end": "2022-09-19 18:50:00"
+		}
+	],
+	[
+		{
+			"title": "DL & Microprocessors Lab",
+			"venue": "SJT212",
+			"start": "2022-09-19 08:00:00",
+			"end": "2022-09-19 09:40:00"
+		},
+		{
+			"title": "English Lab",
+			"venue": "TT116",
+			"start": "2022-09-19 09:51:00",
+			"end": "2022-09-19 11:30:00"
+		},
+		{
+			"title": "DL & Microprocessors",
+			"venue": "SJTG04",
+			"start": "2022-09-19 14:00:00",
+			"end": "2022-09-19 14:50:00"
+		},
+		{
+			"title": "Differential Equations",
+			"venue": "SJTG01",
+			"start": "2022-09-19 15:00:00",
+			"end": "2022-09-19 15:50:00"
+		},
+		{
+			"title": "English",
+			"venue": "PRP122",
+			"start": "2022-09-19 16:00:00",
+			"end": "2022-09-19 16:50:00"
+		}
+	],
+	[
+		{
+			"title": "OOPS Lab",
+			"venue": "SJT218",
+			"start": "2022-09-19 08:00:00",
+			"end": "2022-09-19 09:40:00"
+		},
+		{
+			"title": "BEEE Lab",
+			"venue": "TT044",
+			"start": "2022-09-19 11:40:00",
+			"end": "2022-09-19 13:20:00"
+		},
+		{
+			"title": "BEEE",
+			"venue": "SJTG01",
+			"start": "2022-09-19 15:00:00",
+			"end": "2022-09-19 15:50:00"
+		},
+		{
+			"title": "QSP",
+			"venue": "SJTG01",
+			"start": "2022-09-19 16:00:00",
+			"end": "2022-09-19 16:50:00"
+		}
+	],
+	[
+		{
+			"title": "OOPS",
+			"venue": "SJTG03",
+			"start": "2022-09-19 14:00:00",
+			"end": "2022-09-19 14:50:00"
+		},
+		{
+			"title": "DL & Microprocessors",
+			"venue": "SJTG04",
+			"start": "2022-09-19 15:00:00",
+			"end": "2022-09-19 15:50:00"
+		},
+		{
+			"title": "Differential Equations",
+			"venue": "SJTG01",
+			"start": "2022-09-19 16:00:00",
+			"end": "2022-09-19 16:50:00"
+		}
+	],
+	[],
+	[]
+]
