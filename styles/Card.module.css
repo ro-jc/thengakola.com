@@ -75,8 +75,7 @@
 .location {
   padding: 0 5px;
   margin: 0 2.5px;
-
-  color: yellow;
+  /* color: var(--to-be-busy); */
   border-left: 3px solid var(--to-be-busy);
   border-bottom: 3px solid var(--to-be-busy);
   border-top: 3px solid var(--to-be-busy);
@@ -106,4 +105,3 @@
   padding: 10px 0 0 0;
   /* display: none; */
 }
-
