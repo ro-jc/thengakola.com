@@ -23,14 +23,11 @@ const nameList = [
 
 export default function App({ timetables }) {
   return (
-    <>
-      <div style={{ height: "55px" }}></div>
       <Base>
         {nameList.map((name) => {
           return <Card name={name} timetable={timetables[name]} key={name} />;
         })}
       </Base>
-    </>
   );
 }
 
