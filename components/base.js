@@ -21,7 +21,7 @@ export default function Base({ children }) {
           alt="title background"
           className={style.titleBg}
         /> */}
-        <div className={style.title}>thengakola</div>
+        <h1 className={style.title}>thengakola</h1>
       </div>
       <div className={style.cardContainer}>{children}</div>
     </div>

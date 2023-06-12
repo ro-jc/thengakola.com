@@ -45,6 +45,11 @@ a {
   box-sizing: border-box;
 }
 
+i {
+  color: var(--accent);
+  padding: 5px 2px;
+}
+
 img {
   max-width: 100%;
   height: auto;

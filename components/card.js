@@ -88,13 +88,15 @@ export default function Card({ name, timetable }) {
       </div>
     );
   } else {
-    middle = <div className={style.middle}></div>;
+    middle = <></>;
   }
 
   function handleClick() {
     setExpanded(!expanded);
     // middle.slideToggle();
   }
+
+  let border = `3px solid var(--${color})`;
 
   return (
     <div className={name}>
@@ -108,16 +110,43 @@ export default function Card({ name, timetable }) {
                 alt={name}
                 width={86.4}
                 height={86.4}
+                priority
+                style={{
+                  borderBottom: `5px dashed var(--${color})`,
+                  borderRight: `5px dashed var(--${color})`,
+                }}
               />
             </div>
           </a>
-          <div className={style.right}>
+          <div
+            className={style.right}
+            style={{ border: border, color: `var(--${color})` }}
+          >
             <div className={style.subject}>
-              <div className={style.subName}>{period.title}</div>
+              <div
+                className={style.subName}
+                style={{
+                  borderLeft: border,
+                  borderBottom: border,
+                  borderRight: border,
+                }}
+              >
+                {period.title}
+              </div>
             </div>
             <div className={style.timeloc}>
-              <FontAwesomeIcon icon={faClock} />
-              <div className={style.time}>
+              <FontAwesomeIcon
+                icon={faClock}
+                style={{ color: `var(--accent)`, padding: "5px 2px" }}
+              />
+              <div
+                className={style.time}
+                style={{
+                  borderTop: border,
+                  borderBottom: border,
+                  borderRight: border,
+                }}
+              >
                 {period.title
                   ? `${period.start.substring(11, 16)}-${period.end.substring(
                       11,
@@ -125,8 +154,21 @@ export default function Card({ name, timetable }) {
                     )}`
                   : ""}
               </div>
-              ~<div className={style.location}>{period.venue}</div>
-              <FontAwesomeIcon icon={faLocationCrosshairs} />
+              ~
+              <div
+                className={style.location}
+                style={{
+                  borderLeft: border,
+                  borderBottom: border,
+                  borderTop: border,
+                }}
+              >
+                {period.venue}
+              </div>
+              <FontAwesomeIcon
+                icon={faLocationCrosshairs}
+                style={{ color: `var(--accent)`, padding: "5px 2px" }}
+              />
             </div>
           </div>
         </div>
@@ -134,7 +176,10 @@ export default function Card({ name, timetable }) {
         <div className={style.bottom} onClick={handleClick}>
           <FontAwesomeIcon
             icon={faChevronDown}
-            style={{ color: "white", padding: "4px 48%" }}
+            style={{
+              color: `var(--accent)`,
+              padding: "4px",
+            }}
           />
         </div>
       </div>

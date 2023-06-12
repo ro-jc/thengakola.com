@@ -54,17 +54,14 @@
   border-bottom: 3px solid white;
   border-left: 3px solid white;
   padding: 0 5px;
-  color: white;
 }
 .timeloc {
   padding: 2.5px 5px 0 5px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  color: white;
 }
 .time {
-  color: white;
   padding: 0 5px;
   margin: 0 2.5px;
   border-right: 3px solid var(--to-be-busy);
@@ -75,7 +72,6 @@
 .location {
   padding: 0 5px;
   margin: 0 2.5px;
-  /* color: var(--to-be-busy); */
   border-left: 3px solid var(--to-be-busy);
   border-bottom: 3px solid var(--to-be-busy);
   border-top: 3px solid var(--to-be-busy);
