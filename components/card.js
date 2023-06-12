@@ -101,7 +101,18 @@ export default function Card({ name, timetable }) {
   return (
     <div className={name}>
       <div className={style.card}>
-        <div className={style.currentBox}>
+        <div
+          className={style.currentBox}
+          style={
+            color == "free"
+              ? {
+                  height: "107px",
+                  borderBottomRightRadius: "20px",
+                  borderBottom: "3px solid var(--accent)",
+                }
+              : {}
+          }
+        >
           <a href={`./${name}.html`}>
             <div className={style.left}>
               <Image
@@ -120,7 +131,11 @@ export default function Card({ name, timetable }) {
           </a>
           <div
             className={style.right}
-            style={{ border: border, color: `var(--${color})` }}
+            style={
+              color == "free"
+                ? { display: "none" }
+                : { border: border, color: `var(--${color})` }
+            }
           >
             <div className={style.subject}>
               <div
@@ -173,7 +188,11 @@ export default function Card({ name, timetable }) {
           </div>
         </div>
         {middle}
-        <div className={style.bottom} onClick={handleClick}>
+        <div
+          className={style.bottom}
+          onClick={handleClick}
+          style={color == "free" ? { display: "none" } : {}}
+        >
           <FontAwesomeIcon
             icon={faChevronDown}
             style={{
