@@ -1,0 +1,123 @@
+.pCard {
+  /* background: #000000d5; */
+  background: linear-gradient(black, rgba(0, 0, 0, 0));
+  /* margin: 0 4px; */
+  padding: 20px 3px 3px 3px;
+  /* border-bottom-right-radius: 30px; */
+  /* border-bottom-left-radius: 30px; */
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  /* border-radius: 50%; */
+}
+
+.personBox {
+  /* height: 110px; */
+  display: flex;
+  flex-direction: column;
+  /* border: 3px solid var(--accent); */
+  background-size: cover;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  padding: 5px 0 10px 0;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pAvatar {
+  /* object-fit: contain; */
+  /* height: 9rem; */
+  padding: 2px;
+  margin: 6px;
+  border: 5px solid white;
+  border-radius: 40%;
+}
+
+.pInf {
+  border: 3px solid var(--status);
+  margin: 5px;
+  border-radius: 15px;
+  color: paleturquoise;
+  justify-content: space-around;
+}
+
+.subject {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 5px 8px 5px;
+}
+
+.pName {
+  border-right: 3px solid var(--theme);
+  border-bottom: 3px solid var(--theme);
+  border-left: 3px solid var(--theme);
+  padding: 0 5px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.quote {
+  color: var(--theme);
+  font-style: italic;
+  text-align: center;
+  padding: 0 0 8px 0;
+}
+
+.course {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--theme);
+  padding: 10px 0 0 0;
+}
+
+.edu {
+  color: var(--theme);
+  padding: 0 5px;
+  margin: 0 2.5px;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.dayTable table {
+  border: 2px solid var(--to-be-busy);
+  border-radius: 10px;
+  color: white;
+  padding: 0 0 5px 0;
+  width: calc(100vw - 14px);
+  margin: 10px 7px;
+  background: #000000c8;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/* .daytable td {
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+} */
+
+.dayTable table tbody tr {
+  display: flex;
+  border-bottom: 1.8px solid var(--to-be-busy);
+  padding: 2px;
+}
+.dayName {
+  background: var(--to-be-busy);
+  color: #000;
+  font-size: 1.3rem;
+  margin: 0 20% 8px 20%;
+  border-radius: 50px;
+  padding: 0.5px 0 1px 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}

@@ -6,7 +6,7 @@ import styles from "../styles/Home.module.css";
 import Base from "../components/base";
 import Card from "../components/card";
 
-const nameList = [
+export const nameList = [
   "yami",
   "teena",
   "neha",
@@ -23,11 +23,11 @@ const nameList = [
 
 export default function App({ timetables }) {
   return (
-      <Base>
-        {nameList.map((name) => {
-          return <Card name={name} timetable={timetables[name]} key={name} />;
-        })}
-      </Base>
+    <Base offset={55}>
+      {nameList.map((name) => {
+        return <Card name={name} timetable={timetables[name]} key={name} />;
+      })}
+    </Base>
   );
 }
 
