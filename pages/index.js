@@ -3,12 +3,8 @@ import fs from "fs";
 import path from "path";
 import styles from "../styles/Home.module.css";
 
+import Base from "../components/base";
 import Card from "../components/card";
-
-// const font = localFont({
-//   src: "../fonts/TiltNeon-Regular.ttf",
-//   display: "swap",
-// });
 
 const nameList = [
   "yami",
@@ -29,16 +25,11 @@ export default function App({ timetables }) {
   return (
     <>
       <div style={{ height: "55px" }}></div>
-      <div>
-        <div className={styles.appBar}>
-          <h1 className={styles.title}>thengakola</h1>
-        </div>
-        <div className={styles.cardContainer}>
-          {nameList.map((name) => {
-            return <Card name={name} timetable={timetables[name]} key={name} />;
-          })}
-        </div>
-      </div>
+      <Base>
+        {nameList.map((name) => {
+          return <Card name={name} timetable={timetables[name]} key={name} />;
+        })}
+      </Base>
     </>
   );
 }
