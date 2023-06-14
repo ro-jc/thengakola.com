@@ -7,11 +7,13 @@ import styles from "../../styles/Profile.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { v4 as uuidv4 } from "uuid";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
-import { dayToday } from "../../components/card";
 
 const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
 export default function Profile({ timetable, details, name }) {
+  const now = new Date(Date.now());
+  const dayToday = (now.getDay() - 1 + 7) % 7;
+
   return (
     <Base offset={44}>
       <div className={styles.pCard}>

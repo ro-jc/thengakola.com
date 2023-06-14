@@ -8,10 +8,10 @@ import { faLocationCrosshairs } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-const now = new Date(Date.now());
-export const dayToday = (now.getDay() - 1 + 7) % 7;
-
 export default function Card({ name, timetable }) {
+  const now = new Date(Date.now());
+  const dayToday = (now.getDay() - 1 + 7) % 7;
+
   const timetableToday = timetable[dayToday];
 
   var color = "to-be-busy";
