@@ -9,8 +9,8 @@ import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Card({ name, timetable }) {
-  const now = new Date(Date.now());
-  const dayToday = (now.getDay() - 1 + 7) % 7;
+  var now = new Date(Date.now());
+  var dayToday = (now.getDay() - 1 + 7) % 7;
 
   const timetableToday = timetable[dayToday];
 
@@ -87,11 +87,6 @@ export default function Card({ name, timetable }) {
     );
   } else {
     middle = <></>;
-  }
-
-  function handleClick() {
-    setExpanded(!expanded);
-    // middle.slideToggle();
   }
 
   let border = `3px solid var(--${color})`;
@@ -188,7 +183,7 @@ export default function Card({ name, timetable }) {
         {middle}
         <div
           className={style.bottom}
-          onClick={handleClick}
+          onClick={setExpanded(!expanded)}
           style={color == "free" ? { display: "none" } : {}}
         >
           <FontAwesomeIcon

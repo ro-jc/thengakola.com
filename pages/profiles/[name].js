@@ -11,8 +11,8 @@ import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
 export default function Profile({ timetable, details, name }) {
-  const now = new Date(Date.now());
-  const dayToday = (now.getDay() - 1 + 7) % 7;
+  var now = new Date(Date.now());
+  var dayToday = (now.getDay() - 1 + 7) % 7;
 
   return (
     <Base offset={44}>
