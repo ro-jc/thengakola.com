@@ -20,6 +20,7 @@ export default function Profile({ timetableData, name, today }) {
             <Image
               className={styles.pAvatar}
               src={`/avatars/${name}.jpg`}
+              priority
               width={144}
               height={144}
               alt={name}
