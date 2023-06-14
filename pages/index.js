@@ -1,7 +1,6 @@
 import Head from "next/head";
 import fs from "fs";
 import path from "path";
-import styles from "../styles/Home.module.css";
 
 import Base from "../components/base";
 import Card from "../components/card";
