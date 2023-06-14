@@ -111,7 +111,7 @@ export default function Card({ name, timetable }) {
               : {}
           }
         >
-          <Link href={`/profiles/${name}`} prefetch>
+          <Link href={`/profiles/${name}`}>
             <div className={style.left}>
               <Image
                 className={style.avatar}
