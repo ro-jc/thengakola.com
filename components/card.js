@@ -11,8 +11,6 @@ const now = new Date(Date.now());
 export const dayToday = (now.getDay() - 1 + 7) % 7;
 
 export default function Card({ name, timetable }) {
-  let image = `/../public/avatars/${name}.jpg`;
-
   const timetableToday = timetable[dayToday];
 
   var color = "to-be-busy";
@@ -116,7 +114,7 @@ export default function Card({ name, timetable }) {
             <div className={style.left}>
               <Image
                 className={style.avatar}
-                src={image}
+                src={`/avatars/${name}.jpg`}
                 alt={name}
                 width={86.4}
                 height={86.4}

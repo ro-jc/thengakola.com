@@ -19,7 +19,7 @@ export default function Profile({ timetableData, name, today }) {
           <div className={styles.left}>
             <Image
               className={styles.pAvatar}
-              src={`/../public/avatars/${name}.jpg`}
+              src={`/avatars/${name}.jpg`}
               width={144}
               height={144}
               alt={name}
