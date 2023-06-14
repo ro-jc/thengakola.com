@@ -2,6 +2,7 @@ import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import style from "../styles/Card.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationCrosshairs } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
@@ -110,7 +111,7 @@ export default function Card({ name, timetable }) {
               : {}
           }
         >
-          <a href={`./profiles/${name}`}>
+          <Link href={`/profiles/${name}`} prefetch>
             <div className={style.left}>
               <Image
                 className={style.avatar}
@@ -125,7 +126,7 @@ export default function Card({ name, timetable }) {
                 }}
               />
             </div>
-          </a>
+          </Link>
           <div
             className={style.right}
             style={
