@@ -183,7 +183,7 @@ export default function Card({ name, timetable }) {
         {middle}
         <div
           className={style.bottom}
-          onClick={setExpanded(!expanded)}
+          onClick={() => setExpanded(!expanded)}
           style={color == "free" ? { display: "none" } : {}}
         >
           <FontAwesomeIcon
