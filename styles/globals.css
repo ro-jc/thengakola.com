@@ -81,3 +81,7 @@ td {
   border-radius: 3px;
   text-align: center;
 }
+
+table tbody tr td {
+  flex: 2;
+}

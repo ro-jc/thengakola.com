@@ -4,11 +4,16 @@ import path from "path";
 import fs from "fs";
 import Image from "next/image";
 import styles from "../../styles/Profile.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { v4 as uuidv4 } from "uuid";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { dayToday } from "../../components/card";
 
-export default function Profile({ timetableData, name }) {
+const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+
+export default function Profile({ timetableData, name, today }) {
   // console.log(timetableData);
-  const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+
   return (
     <Base offset={44}>
       <div className={styles.pCard}>
@@ -29,52 +34,70 @@ export default function Profile({ timetableData, name }) {
             <div className={styles.quote}>"kettu praayam aayi gooyz..."</div>
             <div className={styles.course}>
               <div className={styles.edu}>
-                <i class="fa-solid fa-graduation-cap"></i> BTech CSE with IoT
+                <FontAwesomeIcon
+                  icon={faGraduationCap}
+                  style={{
+                    color: "var(--accent)",
+                    padding: "5px 2px",
+                    fontSize: "0.8rem",
+                  }}
+                />
+                BTech CSE with IoT
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div>
-        <div className={styles.dayTable}>
-          <table>
-            <tbody>
-              {/* <tr> */}
-              <td className={styles.dayName}>Monday</td>
-              {/* </tr> */}
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="upper">
-        <div className={styles.dayTable}>
-          <table>
-            <td className={styles.dayName}>Tuesday</td>
-          </table>
-        </div>
-      </div>
-      <div class="upper">
-        <div className={styles.dayTable}>
-          <table>
-            <td className={styles.dayName}>Wednesday</td>
-          </table>
-        </div>
-      </div>
-      <div class="upper">
-        <div className={styles.dayTable}>
-          <table>
-            <td className={styles.dayName}>Thursday</td>
-          </table>
-        </div>
-      </div>
-      <div class="upper">
-        <div className={styles.dayTable}>
-          <table>
-            <td className={styles.dayName}>Friday</td>
-          </table>
-        </div>
-      </div>
+      {days.map((day, i) => {
+        return (
+          <div key={uuidv4()}>
+            <div className={styles.dayTable}>
+              <table
+                style={i == dayToday ? { border: "2px solid var(--busy)" } : {}}
+              >
+                <tbody>
+                  <tr
+                    key={uuidv4()}
+                    style={
+                      i == dayToday
+                        ? { borderBottom: "1.8px solid var(--busy)" }
+                        : {}
+                    }
+                  >
+                    <td
+                      className={styles.dayName}
+                      style={i == dayToday ? { background: "var(--busy)" } : {}}
+                    >
+                      {day}
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  {timetableData[i].map((period) => {
+                    return (
+                      <tr
+                        key={uuidv4()}
+                        style={
+                          i == dayToday
+                            ? { borderBottom: "1.8px solid var(--busy)" }
+                            : {}
+                        }
+                      >
+                        <td>
+                          {period.start.substring(11, 16)}-
+                          {period.end.substring(11, 16)}
+                        </td>
+                        <td>{period.venue}</td>
+                        <td>{period.title}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        );
+      })}
     </Base>
   );
 }
