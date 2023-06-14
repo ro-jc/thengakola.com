@@ -57,8 +57,6 @@ export default function Card({ name, timetable }) {
     color = "free";
   }
 
-  // console.log(name, i, color);
-
   const [expanded, setExpanded] = useState(false);
   var middle;
   if (expanded) {
@@ -73,7 +71,6 @@ export default function Card({ name, timetable }) {
               } else if (i == currentClass) {
                 style = { background: `var(--${color})`, color: "#000000c8" };
               }
-              console.log(name, currentClass, style);
               return (
                 <tr key={uuidv4()} style={style}>
                   <td>

@@ -12,8 +12,6 @@ import { dayToday } from "../../components/card";
 const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
 export default function Profile({ timetableData, name, today }) {
-  // console.log(timetableData);
-
   return (
     <Base offset={44}>
       <div className={styles.pCard}>
