@@ -33,7 +33,10 @@ export async function getStaticProps() {
   var timetables = new Map();
 
   nameList.map((name) => {
-    const timetablePath = path.join(process.cwd(), `timetables/${name}.json`);
+    const timetablePath = path.join(
+      process.cwd(),
+      `data/timetables/${name}.json`
+    );
     const timetable = fs.readFileSync(timetablePath, "utf8");
     timetables.set(name, JSON.parse(timetable));
   });

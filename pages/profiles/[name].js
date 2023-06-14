@@ -11,7 +11,7 @@ import { dayToday } from "../../components/card";
 
 const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
-export default function Profile({ timetableData, name }) {
+export default function Profile({ timetable, details, name }) {
   return (
     <Base offset={44}>
       <div className={styles.pCard}>
@@ -28,9 +28,9 @@ export default function Profile({ timetableData, name }) {
           </div>
           <div className={styles.pInf}>
             <div className={styles.subject}>
-              <div className={styles.pName}>{name}</div>
+              <div className={styles.pName}>{details.name}</div>
             </div>
-            <div className={styles.quote}>"kettu praayam aayi gooyz..."</div>
+            <div className={styles.quote}>"{details.bio}"</div>
             <div className={styles.course}>
               <div className={styles.edu}>
                 <FontAwesomeIcon
@@ -41,7 +41,7 @@ export default function Profile({ timetableData, name }) {
                     fontSize: "0.8rem",
                   }}
                 />
-                BTech CSE with IoT
+                {details.course}
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function Profile({ timetableData, name }) {
                   </tr>
                 </tbody>
                 <tbody>
-                  {timetableData[i].map((period) => {
+                  {timetable[i].map((period) => {
                     return (
                       <tr
                         key={uuidv4()}
@@ -115,13 +115,21 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const name = params.name;
-  const timetablesDir = path.join(process.cwd(), "timetables");
-  const fullPath = path.join(timetablesDir, `${params.name}.json`);
-  const timetable = fs.readFileSync(fullPath, "utf8");
-  const timetableData = JSON.parse(timetable);
+
+  const timetablesDir = path.join(
+    process.cwd(),
+    "data/timetables",
+    `${name}.json`
+  );
+  const detailsDir = path.join(process.cwd(), "data/details", `${name}.json`);
+
+  const timetable = JSON.parse(fs.readFileSync(timetablesDir, "utf8"));
+  const details = JSON.parse(fs.readFileSync(detailsDir, "utf8"));
+
   return {
     props: {
-      timetableData,
+      timetable,
+      details,
       name,
     },
   };
